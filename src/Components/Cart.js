@@ -25,7 +25,7 @@ const Cart = (props) => {
               price={meal.price}
               amount={meal.amount}
               onAdd={() => Kart.updateAvailableMeals(meal.id, 1)}
-              onRemove={() => Kart.updateAvailableMeals(meal.id, -1)}
+              onRemove={() => Kart.updateAvailableMeals(meal.id, Number(-1))}
             />
           );
         })}
