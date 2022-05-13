@@ -12,12 +12,12 @@ export const KartContextProvider = (props) => {
   const [totalPrice, setTotalPrice] = useState(0);
 
   const updateMeals = (id, value) => {
-    setItemSum(itemSum + Number(value));
+    setItemSum(Number(itemSum) + Number(value));
     let temp = meals.map((meal) => {
       if (meal.id === id) {
         return {
           ...meal,
-          amount: meal.amount + value,
+          amount: meal.amount + Number(value),
         };
       }
       return meal;
