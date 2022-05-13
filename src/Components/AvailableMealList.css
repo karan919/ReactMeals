@@ -1,0 +1,41 @@
+.availableMeal-list {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black !important;
+  }
+  
+  @keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .add{
+      margin-top: 10px;
+      display: block;
+      padding: 8px;
+      width: 50%;
+      margin-left: auto;
+      background-color: #8a653a;
+      color: white;
+      border-radius: 1rem;
+  }
+
+  .input-box input{
+      width: 70px;
+      padding: 5px;
+      font-weight: 800;
+  }
+
+  .input-box label{
+      margin-right: 10px;
+  }
